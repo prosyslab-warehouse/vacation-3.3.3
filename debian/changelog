@@ -1,0 +1,138 @@
+vacation (3.3.3) unstable; urgency=medium
+
+  * Re-upload as a source-only upload to allow testing migration.
+
+ -- Ian Jackson <ijackson@chiark.greenend.org.uk>  Sat, 24 Aug 2019 11:47:49 +0100
+
+vacation (3.3.2) unstable; urgency=medium
+
+  * Apply patch from Reiner Herrmann to fix FTBFS (thanks!)
+    (closes: #925848).
+  * Bump standards-version to 4.4.0.
+  * Change priority extra to optional.
+
+ -- Phil Brooke <pjb@debian.org>  Mon, 19 Aug 2019 14:06:42 +0100
+
+vacation (3.3.1) unstable; urgency=medium
+
+  * New maintainers: Phil Brooke <pjb@debian.org> and Ian Jackson
+    <ijackson@chiark.greenend.org.uk>.
+  * Change priority to extra to match override file.
+  * Bump standards-version to 3.9.6.
+  * Set debian/compat to 9 and bump debhelper build-dep version.
+  * Set debian/source/format to 1.0.
+  * Replace debian/rules with short version with invocation of dh $@.
+  * Modifications to Makefile for new debian/rules.
+  * Add hardening flags to Makefile.
+  * As this is a Debian native package, added new maintainers to
+    copyright file.
+  * Directly insert the code of the 3-clause BSD licence into the
+    copyright file, removing reference to deprecated licence file.
+  * Add discard() as suggested by Jörg Kleuver (closes: #263731), thanks.
+  * Add check for "X-Spam-Flag: yes" header (closes: #593279).
+    Patch from Lukas Svoboda -- thanks.  Also added to man page.
+  * Add lowercase case in the switch statements for mail headers as
+    suggested by Michael Fischer v. Mollard (closes: #369888), thanks.
+  * Add check for "auto-submitted: " header (closes: #496916).
+    Updated man page too.
+  * Fix typo in man page; patch from Yoshio Nakamura -- thanks
+    (closes: #221162).
+  * Applied patch to man page from Tomas Pospisek, thanks.  This
+    explicitly notes that -a can be used multiple times (closes: #381931).
+  * Add -c option for cc'ing vacation messages.
+  * Disregarding lintian warning:
+      latest-debian-changelog-entry-changed-to-native.
+
+ -- Phil Brooke <pjb@debian.org>  Wed, 22 Oct 2014 19:57:12 +0100
+
+vacation (3.3.0-0.4) unstable; urgency=low
+
+  * NMU
+  * Change build dependency to libdb-dev (>= 5.1)
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 28 Mar 2011 15:19:24 +0200
+
+vacation (3.3.0-0.3) unstable; urgency=low
+
+  * NMU
+  * Change build dependency to libdb-dev (>= 4.6.19-1).  closes: #442681.
+  * Bump Standards-Version to 3.7.2.
+
+ -- Clint Adams <schizo@debian.org>  Sun, 07 Oct 2007 09:55:42 -0400
+
+vacation (3.3.0-0.2) unstable; urgency=low
+
+  * NMU
+  * Fix the debian/copyright to properly indicate the history of this
+    package (Closes: #364522)
+  * Add binary-indep target comply with policy 4.8
+  
+ -- Don Armstrong <don@debian.org>  Tue, 25 Apr 2006 20:47:09 -0700
+
+vacation (3.3.0-0.1) unstable; urgency=low
+
+  * NMU
+  * Recompile against libdb4.3 (Closes: #263235)
+
+ -- Don Armstrong <don@debian.org>  Sat, 31 Dec 2005 00:12:39 -0800
+
+vacation (3.3.0) unstable; urgency=low
+
+  * Added support for editing the away message.
+  * Accept no reply as a negative reply. (Closes: #166227)
+  * Compiled against libdb4.1.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 15 Jun 2003 03:18:08 +0200
+
+vacation (3.2.5) unstable; urgency=medium
+
+  * Applied patch to support qmail-style Return-Path headers
+    (i.e. in the form "Name <address>").
+
+ -- Marco d'Itri <md@linux.it>  Tue, 17 Sep 2002 16:48:21 +0200
+
+vacation (3.2.4) unstable; urgency=medium
+
+  * Compiled with libdb4.0-dev.
+  * Fixed typos (Closes: #125630, #150576).
+  * Make -i and -r options work at the same time (Closes: #150576).
+  * Do not chdir(3) home if data files have absolute paths.
+
+ -- Marco d'Itri <md@linux.it>  Thu,  8 Aug 2002 21:37:23 +0200
+
+vacation (3.2.3) unstable; urgency=medium
+
+  * Fixed lookup() return value.
+
+ -- Marco d'Itri <md@linux.it>  Thu,  4 Oct 2001 02:00:08 +0200
+
+vacation (3.2.2) unstable; urgency=medium
+
+  * Fixed -l and -x switches (Closes: #112773).
+
+ -- Marco d'Itri <md@linux.it>  Wed, 19 Sep 2001 21:39:19 +0200
+
+vacation (3.2.1) unstable; urgency=medium
+
+  * Fixed Makefile (Closes: #109679).
+
+ -- Marco d'Itri <md@linux.it>  Wed, 22 Aug 2001 23:13:49 +0200
+
+vacation (3.2) unstable; urgency=low
+
+  * Added -d option (debug mode) from FreeBSD CVS.
+  * Implemented solaris-style automatic configuration.
+
+ -- Marco d'Itri <md@linux.it>  Tue, 21 Aug 2001 18:23:22 +0200
+
+vacation (3.1) unstable; urgency=low
+
+  * Fixed build dependencies (Closes: #90354).
+
+ -- Marco d'Itri <md@linux.it>  Mon, 16 Jul 2001 23:03:51 +0200
+
+vacation (3.0) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Marco d'Itri <md@linux.it>  Sun, 16 Jul 2000 18:59:16 +0200

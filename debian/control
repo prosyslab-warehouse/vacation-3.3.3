@@ -1,0 +1,19 @@
+Source: vacation
+Section: mail
+Priority: optional
+Maintainer: Phil Brooke <pjb@debian.org>
+Uploaders: Ian Jackson <ijackson@chiark.greenend.org.uk>
+Build-Depends: debhelper (>= 9.0), libdb-dev (>= 5.1)
+Standards-Version: 4.4.0
+
+Package: vacation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: bsdmainutils (<= 4.8)
+Conflicts: bsdmainutils (<= 4.8)
+Description: email autoresponder
+ Vacation returns a message to the sender of a message telling them that
+ you are currently not reading your mail.
+ .
+ This program is derived from the NetBSD version and has most of the
+ features present in the Linux, Solaris, AIX and *BSD versions.
